@@ -5,8 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-        $("#nome").hide();
-        $("#email").hide();
+        $("#nome").show();
+        $("#email").show();
         $("#login").hide();
         $("#pass").hide();
              
@@ -15,14 +15,11 @@
         });
         $("input").blur(function(){
             $(this).css("background-color","#ffffff");
-        });  
-        
-
+        });
        $("img").click(function() {
             $( "img" ).slideUp( "slow", function() { 
                 $("#nome").show();
             });
- 
         $("#nome").change(function(){
             $("#email").show();
             $("#cx_email").focus();
@@ -41,9 +38,7 @@
             $("#login").fadeOut(5000);
             $("#pass").fadeOut(10000);
             $("img").slideDown( 10000 ); //.slideUp( 300 ).delay( 800 ).fadeIn( 400 );          
-        });  
-                    
-    //INCLUIR EFEITO ANIMATE           
+        });            
 });
     });
     </script>
